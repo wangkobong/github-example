@@ -66,3 +66,41 @@
   color: #fff;
   background: #55a532 linear-gradient(#91dd70, #55ae2e);
 }
+
+/* Header */
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+  background: #fff;
+}
+
+header .inner {
+  max-width: 980px;
+  height: 78px;
+  margin: 0 auto;
+}
+
+.menu-group {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  margin-right: 10px;
+  font-size: 32px;
+}
+
+.logo a:hover {
+  color: #0984e3;
+}
+
+.main-menu {
+  display: flex;
+}
+.main-menu li a {
+  display: block; /* a태그는 인라인요소이기 때문에 padding값을 적용하기 위해 block요소로 변경*/
+  padding: 10px;
+  color: #3c4146;
+  text-decoration: none;
+}
