@@ -6,6 +6,10 @@
   color: #333;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Input Text */
 .input--text {
   height: 34px;
@@ -50,6 +54,7 @@
   cursor: pointer;
   box-sizing: border-box;
   position: relative;
+  color: #333;
 }
 
 .btn:hover::before {
@@ -57,6 +62,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.07);
 }
@@ -75,6 +81,7 @@ header {
 }
 
 header .inner {
+  display: flex;
   max-width: 980px;
   height: 78px;
   margin: 0 auto;
@@ -91,6 +98,10 @@ header .inner {
   font-size: 32px;
 }
 
+.logo a {
+  color: rgba(0, 0, 0, 0.75);
+}
+
 .logo a:hover {
   color: #0984e3;
 }
@@ -98,9 +109,17 @@ header .inner {
 .main-menu {
   display: flex;
 }
+
 .main-menu li a {
   display: block; /* a태그는 인라인요소이기 때문에 padding값을 적용하기 위해 block요소로 변경*/
   padding: 10px;
   color: #3c4146;
-  text-decoration: none;
+}
+
+.main-menu li a:hover {
+  color: #0984e3;
+}
+
+.sign-group {
+  display: flex;
 }
