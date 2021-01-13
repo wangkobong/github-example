@@ -88,6 +88,16 @@ a {
   float: right;
 }
 
+/* Summary */
+.summary {
+}
+
+.summary__title {
+}
+
+.summary__description {
+}
+
 /* Header */
 header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.75);
@@ -102,8 +112,6 @@ header .inner {
   justify-content: space-between;
   height: 78px;
   margin: auto;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 .menu-group {
@@ -182,4 +190,11 @@ header .inner {
 
 .sub-menu li a:hover {
   color: #0984e3;
+}
+
+/* Visual */
+.section--visual {
+}
+
+.summary {
 }
