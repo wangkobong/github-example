@@ -8,6 +8,7 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Input Text */
@@ -89,8 +90,6 @@ a {
 }
 
 /* Summary */
-.summary {
-}
 
 .summary__title {
   font-size: 38px;
@@ -395,4 +394,51 @@ header .inner {
   font-weight: 300;
   line-height: 1.5;
   flex: 1;
+}
+
+/* Footer */
+footer {
+}
+
+footer .inner {
+  padding: 50px 0;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .site-links {
+  display: flex;
+}
+
+.item-left {
+  order: 1;
+}
+footer .site-links li {
+  font-size: 12px;
+  margin-right: 10px;
+  color: #767676;
+}
+footer .site-links li a {
+  color: #4078c0;
+}
+
+footer .site-links li a:hover {
+  text-decoration: underline;
+}
+
+footer .logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 24px;
+  height: 24px;
+  color: black;
+}
+
+footer .logo i:hover {
+  color: #4078c0;
 }
