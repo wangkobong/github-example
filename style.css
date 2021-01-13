@@ -93,9 +93,29 @@ a {
 }
 
 .summary__title {
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 18px;
 }
 
 .summary__description {
+  font-size: 26px;
+  font-weight: 300;
+  color: #767676;
+  line-height: 1.5;
+}
+
+/* Section and Inner */
+.section {
+  position: relative;
+}
+
+.section .inner {
+  max-width: 980px;
+  margin: auto;
+  box-sizing: border-box;
+  position: relative;
 }
 
 /* Header */
@@ -106,12 +126,10 @@ header {
 }
 
 header .inner {
-  max-width: 960px;
   display: flex;
   text-align: center;
   justify-content: space-between;
   height: 78px;
-  margin: auto;
 }
 
 .menu-group {
@@ -194,7 +212,34 @@ header .inner {
 
 /* Visual */
 .section--visual {
+  background-image: url(img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover; /* 브라우저를 확대 및 축소해도 배경이미지를 가질 수 있음 */
 }
 
-.summary {
+.section--visual::before {
+  /* 배경을 어둡게 하기 위한 코드 */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.section--visual .inner {
+  padding: 160px 0;
+}
+
+.summary__title {
+  color: #fff;
+  font-size: 54px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 25px rgba(0, 0, 0, 0.75);
+}
+
+.summary__description {
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 25px rgba(0, 0, 0, 0.75);
 }
