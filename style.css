@@ -450,10 +450,6 @@ footer .logo i:hover {
     flex-direction: column;
   }
 
-  header .toggle {
-    /* display: none; */
-  }
-
   header .menu-group {
     flex-direction: column;
   }
@@ -508,6 +504,13 @@ footer .logo i:hover {
   header .logo {
     width: 100%;
     padding: 12px 0;
+  }
+  header .toggle {
+    display: none;
+  }
+
+  header .toggle.on {
+    display: block;
   }
 
   #toggle-btn {
