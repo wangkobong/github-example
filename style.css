@@ -397,8 +397,6 @@ header .inner {
 }
 
 /* Footer */
-footer {
-}
 
 footer .inner {
   padding: 50px 0;
@@ -430,9 +428,9 @@ footer .site-links li a:hover {
 footer .logo {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   margin: auto;
   width: 24px;
   height: 24px;
@@ -441,4 +439,35 @@ footer .logo {
 
 footer .logo i:hover {
   color: #4078c0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  header .section {
+  }
+  header.section .inner {
+    padding: 0 20px;
+    max-width: none;
+    height: auto;
+  }
+
+  header .toggle {
+    display: none;
+  }
+
+  header .menu-group,
+  header .sign-group {
+  }
+  header .logo {
+    padding: 12px 0;
+  }
+
+  #toggle-btn {
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
 }

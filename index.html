@@ -25,6 +25,8 @@
   
   <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">  -->
   <script src="https://kit.fontawesome.com/1051802a5c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png"> <!-- 스마트폰에서 사용하는 아이콘-->
   <link rel="stylesheet" href="reset.css"> <!-- reset파일은 호출되는 순서도 중요함-->
@@ -41,14 +43,14 @@
         <div class="logo">
           <a href="#"><i class="fab fa-github"></i></a>
         </div>
-        <ul class="main-menu">
+        <ul class="main-menu toggle" >
           <li><a href="#" class="">Personal</a></li>
           <li><a href="#" class="">Open source</a></li>
           <li><a href="#" class="">Business</a></li>
           <li><a href="#" class="">Explore</a></li>
         </ul>
       </div>
-      <div class="sign-group">
+      <div class="sign-group toggle">
         <div class="btn-group">
           <a href="#" class="btn sign-in">Sign in</a>
           <a href="#" class="btn btn--primary sign-up">Sign up</a>
@@ -63,6 +65,8 @@
           <li><a href="#">Support</a></li>        
         </ul>
       </div>
+
+      <div id="toggle-btn"><i class="fas fa-bars"></i></div>
     </div>
   </header>
   <!-- Visual -->
