@@ -209,6 +209,16 @@ header .inner {
   color: #0984e3;
 }
 
+#toggle-btn {
+  display: none;
+  width: 18px;
+  height: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
 /* Visual */
 .section--visual {
   background-image: url(img/bg.jpg);
@@ -514,11 +524,6 @@ footer .logo i:hover {
   }
 
   #toggle-btn {
-    width: 18px;
-    height: 24px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
+    display: block;
   }
 }
